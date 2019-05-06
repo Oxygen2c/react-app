@@ -6,8 +6,10 @@ export class Todo extends Component {
         this.state = {
             list: [],
         }
+        this.addItem = this.addItem.bind(this);
     }
-    addItem = () => {
+    addItem = (e) => {
+        e.preventDefault();
         const newList = this.state.list
         newList.push(newList.length)
         this.setState({

@@ -6,9 +6,10 @@ export class Message extends Component {
     // debugger;
   }
   render() {
+    const {message} = this.props;
     return (
       <div className="messege">
-        <h1>Сообщение: {this.props.message}</h1>
+        <h1>{`${message}`}</h1>
       </div>
       );
   }
